@@ -37,9 +37,11 @@ fun! LoadLightlineGruvbox()
 
     let s:red      = '#fb4934'
     let s:green    = '#b8bb26'
+    let s:yellow   = '#fabd2f'
     let s:blue     = '#83a598'
     let s:orange   = '#fe8019'
     let s:c_red    = 167
+    let s:c_yellow = 178
     let s:c_green  = 142
     let s:c_blue   = 109
     let s:c_orange = 208
@@ -68,9 +70,11 @@ fun! LoadLightlineGruvbox()
 
     let s:red      = '#9d0006'
     let s:green    = '#79740e'
+    let s:yellow   = '#b57614'
     let s:blue     = '#076678'
     let s:orange   = '#af3a03'
     let s:c_red    = 88
+    let s:c_yellow = 11
     let s:c_green  = 100
     let s:c_blue   = 24
     let s:c_orange = 130
@@ -112,6 +116,13 @@ fun! LoadLightlineGruvbox()
     let s:p.normal.right = [
           \ [s:mono0, s:mono4, s:c_mono0, s:c_mono4],
           \ [s:mono0, s:mono4, s:c_mono0, s:c_mono4]]
+    let s:p.normal.error = [
+          \ [s:mono0, s:red, s:c_mono0, s:c_red]]
+    let s:p.normal.warning = [
+          \ [s:mono0, s:yellow, s:c_mono0, s:c_yellow]]
+    let s:p.normal.ok = [
+          \ [s:mono0, s:green, s:c_mono0, s:c_green]]
+
   endif
 
   let s:p.inactive.middle = [
